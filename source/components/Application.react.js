@@ -12,4 +12,4 @@ const Application = React.createClass({
 
 });
 
-export default Application;
+module.exports = Application;
