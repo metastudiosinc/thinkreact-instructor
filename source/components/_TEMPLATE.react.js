@@ -1,6 +1,9 @@
 const React = require('react');
 
-const NAME = React.createClass({
+const <NAME> = React.createClass({
+
+  name: "<NAME>",
+  mixins: [logs], //dont for get the comma
 
   //-----default API--------
   //getDefaultProps: function(){},
@@ -23,4 +26,4 @@ const NAME = React.createClass({
 
 });
 
-module.exports = NAME
+module.exports = <NAME>

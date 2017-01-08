@@ -3,6 +3,7 @@ var logs = require('../utilities/logMixin.js')
 
 const Application = React.createClass({
 
+  name: "Application",
   mixins: [logs], //dont for get the comma
 
   //-----default API--------
