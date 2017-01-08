@@ -1,6 +1,9 @@
 var React = require('react');
+var logs = require('../utilities/logMixin.js')
 
 const Application = React.createClass({
+
+  mixins: [logs], //dont for get the comma
 
   //-----default API--------
   //getDefaultProps: function(){},
