@@ -19,7 +19,7 @@ const Application = React.createClass({
   //shouldComponentUpdate: function(){},
   //componentWillUpdate: function(){},
 
-  render() {
+  render: function() {
     return (
       <div>
         <Banner />
