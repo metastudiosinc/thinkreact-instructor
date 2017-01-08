@@ -1,6 +1,6 @@
-var React = require('react');
+const React = require('react');
 
-const Application = React.createClass({
+const NAME = React.createClass({
 
   //-----default API--------
   //getDefaultProps: function(){},
@@ -11,14 +11,16 @@ const Application = React.createClass({
   //shouldComponentUpdate: function(){},
   //componentWillUpdate: function(){},
 
-  render() {
+  render: function() {
     return (
-      <div>React Application Component</div>
+      <div>TEMPLATE</div>
     );
+
   },
   //componentDidUpdate: function(){},
   //componentWillUnmount: function(){}
 
+
 });
 
-module.exports = Application;
+module.exports = NAME
