@@ -1,6 +1,10 @@
 var React = require('react');
 var logs = require('../utilities/logMixin.js')
 
+var Section = require('./Section.react.js')
+var Banner = require('./Banner.react.js')
+
+
 const Application = React.createClass({
 
   name: "Application",
@@ -17,7 +21,13 @@ const Application = React.createClass({
 
   render() {
     return (
-      <div>React Application Component</div>
+      <div>
+        <Banner />
+        <Section> 1</Section>
+        <Section> 2</Section>
+        <Section> 3</Section>
+        <Section> 4</Section>
+      </div>
     );
   },
   //componentDidUpdate: function(){},

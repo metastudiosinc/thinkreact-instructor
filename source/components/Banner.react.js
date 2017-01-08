@@ -1,12 +1,9 @@
 const React = require('react');
 var logs = require('../utilities/logMixin.js')
-const <NAME> = React.createClass({
+const Banner = React.createClass({
 
-  name: "<NAME>",
+  name: "Banner",
   mixins: [logs], //dont for get the comma
-  propTypes:{
-    children:React.propTypes.node
-  }
 
   //-----default API--------
   //getDefaultProps: function(){},
@@ -19,7 +16,8 @@ const <NAME> = React.createClass({
 
   render: function() {
     return (
-      <div>TEMPLATE</div>
+      <div>BANNER</div>
+    );
 
   },
   //componentDidUpdate: function(){},
@@ -28,4 +26,4 @@ const <NAME> = React.createClass({
 
 });
 
-module.exports = <NAME>
+module.exports = Banner
