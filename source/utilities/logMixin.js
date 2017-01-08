@@ -1,6 +1,10 @@
 module.exports = {
   log: function(method, args) {
-    console.log(this.name + '::' + method, args);
+    var msgObject = {}
+    msgObject.name = this.name + '::' + method
+    msgObject.args = args
+    msgObject.datetime = new Date();
+    console.log(msgObject);
     //This would be an ideal place to put a call to an
     // external logs database as appropriate.
   },
