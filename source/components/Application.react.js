@@ -3,7 +3,7 @@ var logs = require('../utilities/logMixin.js')
 
 var Section = require('./Section.react.js')
 var Banner = require('./Banner.react.js')
-
+var textBlock = require('./textBlock.react.js')
 
 const Application = React.createClass({
 
@@ -27,6 +27,7 @@ const Application = React.createClass({
         <Section> 2</Section>
         <Section> 3</Section>
         <Section> 4</Section>
+        <textBlock>Stateless</textBlock>
       </div>
     );
   },
