@@ -20,7 +20,7 @@ const Section = React.createClass({
     render: function() {
         return (
             <div>
-                <h2>{this.props.tite}</h2>
+                <h2>{this.props.title}</h2>
                 {this.props.children}
             </div>
         );
