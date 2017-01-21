@@ -5,8 +5,9 @@ const Section = React.createClass({
   name: "Section",
   mixins: [logs], //dont for get the comma
   propTypes:{
-    children:React.propTypes.node
-  }
+    title:React.PropTypes.string,
+    children:React.PropTypes.node
+  },
 
   //-----default API--------
   //getDefaultProps: function(){},
@@ -19,7 +20,7 @@ const Section = React.createClass({
 
   render: function() {
     return (
-      <div>Section</div>
+      <div>Section {this.props.children}</div>
     )
 
   },

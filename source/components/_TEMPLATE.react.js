@@ -5,8 +5,8 @@ const <NAME> = React.createClass({
   name: "<NAME>",
   mixins: [logs], //dont for get the comma
   propTypes:{
-    children:React.propTypes.node
-  }
+    children:React.PropTypes.node
+  },
 
   //-----default API--------
   //getDefaultProps: function(){},
