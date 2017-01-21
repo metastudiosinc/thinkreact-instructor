@@ -7,8 +7,12 @@ const Col = require('react-bootstrap/lib/Col');
 
 
 const bannerStyle={
-  backgroundColor:"#333",
-  height:"400px"
+  backgroundColor:"#333"
+}
+
+const imageStyle={
+  width:'100%',
+  height:"auto"
 }
 
 const Banner = React.createClass({
@@ -32,8 +36,7 @@ const Banner = React.createClass({
 
     return (
       <Row  style={bannerStyle}>
-
-
+        <img style={imageStyle} src="./img/banner.jpg" />
       </Row>
     )
 

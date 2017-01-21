@@ -1,21 +1,17 @@
 const React = require('react');
-var logs = require('../utilities/logMixin.js')
 const Row = require('react-bootstrap/lib/Row');
 const Col = require('react-bootstrap/lib/Col');
+var logs = require('../utilities/logMixin.js')
 
 
-const sectionStyle = {
-  border:"2px solid red",
-  minHeight:"200px"
-}
+var bulletsArray = ["One for the money", "two for the show", "three to get ready", "four cat go"]
 
 
-const Section = React.createClass({
+const Bullets = React.createClass({
 
-  name: "Section",
+  name: "Bullets",
   mixins: [logs], //dont for get the comma
   propTypes:{
-    title:React.PropTypes.string,
     children:React.PropTypes.node
   },
 
@@ -29,10 +25,28 @@ const Section = React.createClass({
   //componentWillUpdate: function(){},
 
   render: function() {
+
+    var bull;
+
+    if (bulletsArray.length > 0) {
+      bull = bulletsArray.map(function(val, idx) {
+
+        return(
+          <Row key={idx}>
+            <Col xs={12}> ~ {val}</Col>
+          </Row>
+        )
+
+      })
+    }
+
+
+
+
+
+
     return (
-      <Col xs={12} md={6} lg={4}  style={sectionStyle}>
-        {this.props.children}
-      </Col>
+      <div>{bull}</div>
     )
 
   },
@@ -42,4 +56,4 @@ const Section = React.createClass({
 
 });
 
-module.exports = Section
+module.exports = Bullets

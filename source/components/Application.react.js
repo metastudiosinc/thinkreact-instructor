@@ -2,6 +2,10 @@ var React = require('react');
 var logs = require('../utilities/logMixin.js');
 const Section = require('./Section.react.js');
 const Banner = require('./Banner.react.js');
+const Header = require('./Header.react.js');
+const Overview = require('./Overview.react.js');
+const Bullets = require('./Bullets.react.js');
+
 
 const Application = React.createClass({
 
@@ -21,10 +25,16 @@ const Application = React.createClass({
         return (
             <div className="container-fluid">
               <Banner title="Hey do you know " bgc="#123456"> Tony </Banner>
-              <Section>1</Section>
-              <Section>2</Section>
-              <Section>3</Section>
-              <Section>4</Section>
+              <Section>
+                <Header>Overview</Header>
+                <Overview />
+              </Section>
+              <Section>
+                <Header>Bullets</Header>
+                <Bullets />
+              </Section>
+              <Section><Header>Photos</Header></Section>
+              <Section><Header>Tweets</Header></Section>
             </div>
         );
     },
