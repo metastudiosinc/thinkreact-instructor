@@ -19,7 +19,7 @@ const Application = React.createClass({
 
     render: function() {
         return (
-            <div>
+            <div className="container-fluid">
               <Banner title="Hey do you know " bgc="#123456"> Tony </Banner>
               <Section>1</Section>
               <Section>2</Section>

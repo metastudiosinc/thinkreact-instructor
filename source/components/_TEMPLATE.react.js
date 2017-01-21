@@ -1,4 +1,8 @@
 const React = require('react');
+const Row = require('react-bootstrap/lib/Row');
+const Col = require('react-bootstrap/lib/Col');
+
+
 var logs = require('../utilities/logMixin.js')
 const <NAME> = React.createClass({
 
