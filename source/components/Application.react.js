@@ -23,7 +23,7 @@ const Application = React.createClass({
     return (
       <div>
         <Banner />
-        <Section> 1</Section>
+        <Section title="example"> 1</Section>
         <Section> 2</Section>
         <Section> 3</Section>
         <Section> 4</Section>

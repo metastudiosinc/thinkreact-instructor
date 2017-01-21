@@ -20,6 +20,7 @@ const <NAME> = React.createClass({
   render: function() {
     return (
       <div>TEMPLATE</div>
+    )
 
   },
   //componentDidUpdate: function(){},
