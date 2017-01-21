@@ -4,6 +4,9 @@ const Banner = React.createClass({
 
   name: "Banner",
   mixins: [logs], //dont for get the comma
+  propTypes:{
+    children:React.propTypes.node
+  }
 
   //-----default API--------
   //getDefaultProps: function(){},
@@ -16,8 +19,8 @@ const Banner = React.createClass({
 
   render: function() {
     return (
-      <div>BANNER</div>
-    );
+      <div>TEMPLATE</div>
+    )
 
   },
   //componentDidUpdate: function(){},
