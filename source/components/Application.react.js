@@ -5,6 +5,8 @@ const Banner = require('./Banner.react.js');
 const Header = require('./Header.react.js');
 const Overview = require('./Overview.react.js');
 const Bullets = require('./Bullets.react.js');
+const Photos = require('./Photos.react.js');
+
 
 
 const Application = React.createClass({
@@ -33,7 +35,10 @@ const Application = React.createClass({
                 <Header>Bullets</Header>
                 <Bullets />
               </Section>
-              <Section><Header>Photos</Header></Section>
+              <Section>
+                <Header>Photos</Header>
+                <Photos />
+              </Section>
               <Section><Header>Tweets</Header></Section>
             </div>
         );
