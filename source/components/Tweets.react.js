@@ -3,7 +3,7 @@ const Row = require('react-bootstrap/lib/Row');
 const Col = require('react-bootstrap/lib/Col');
 import textBlock from "./textBlock.react"
 import tweetsActions from "../actions/tweets.actions.js"
-
+import TweetsStore from "../stores/Tweets.store.js"
 
 
 var logs = require('../utilities/logMixin.js')

@@ -1,23 +1,42 @@
 
 var AppDispatcher = require('../dispatcher/AppDispatcher');
-var tweetConstants = require('../constants/tweet.constants.js');
+var tweetsConstants = require('../constants/tweets.constants.js');
+require('es6-promise').polyfill();
+require('isomorphic-fetch');
 
 
-var ActionTypes = tweetConstants.ActionTypes;
+var ActionTypes = tweetsConstants.ActionTypes;
 
-var tweetActions = {
+var tweetsActions = {
 
   getNewTweets: function() {
-    console.log("action getNewTweets");
+    console.log("1 - action getNewTweets");
 
-    // AppDispatcher.dispatch({
-    //   type: ActionTypes.<ACTION_NAME>,
-    //   data: data
-    // })
+
+    fetch("/tweets")
+      .then(function(response) {
+          if (response.status >= 400) {
+              throw new Error("Bad response from server");
+          }
+          return response.json();
+      })
+      .then(function(response) {
+          console.log(response.tweets);
+
+          AppDispatcher.dispatch({
+            type: ActionTypes.LOAD_TWEETS,
+            data: response.tweets
+          });
+
+      });
+
+
+
+
   }
 
 
 
 };
 
-module.exports = tweetActions;
+module.exports = tweetsActions;

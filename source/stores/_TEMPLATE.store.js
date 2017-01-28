@@ -1,5 +1,5 @@
 var AppDispatcher = require('../dispatcher/AppDispatcher');
-var <NAME>Constants = require('../constants/<NAME>Constants');
+var <NAME>Constants = require('../constants/<NAME>.constants');
 var EventEmitter = require('events').EventEmitter;
 var React = require('react');
 var assign = require('object-assign');
@@ -34,11 +34,13 @@ var <NAME>Store = assign({}, EventEmitter.prototype, {
 
 });
 
+
 // Register dispatcher callback
 AppDispatcher.register(function(action) {
   // var text;
   // Define what to do for certain actions
   console.log(action.data);
+
   switch(action.type) {
 
     case ActionTypes.ACTIONNAME:
