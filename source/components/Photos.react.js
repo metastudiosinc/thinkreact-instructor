@@ -14,7 +14,7 @@ var logs = require('../utilities/logMixin.js')
 const Photos = React.createClass({
 
   name: "Photos",
-  mixins: [logs], //dont for get the comma
+  // mixins: [logs], //dont for get the comma
   propTypes:{
     children:React.PropTypes.node
   },
@@ -32,7 +32,7 @@ const Photos = React.createClass({
 
     var photoStuff = photoNames.map(function(val, idx) {
       return(
-        <Col xs={6}><img src={val} style={imgStyle} /></Col>
+        <Col key={idx} xs={6}><img src={val} style={imgStyle} /></Col>
       )
     });
 

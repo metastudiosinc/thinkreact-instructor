@@ -11,7 +11,7 @@ var bulletsArray = ["One for the money", "two for the show", "three to get ready
 const Bullets = React.createClass({
 
   name: "Bullets",
-  mixins: [logs], //dont for get the comma
+  // mixins: [logs], //dont for get the comma
   propTypes:{
     children:React.PropTypes.node
   },
