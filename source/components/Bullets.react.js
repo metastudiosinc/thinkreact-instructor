@@ -4,6 +4,7 @@ const Col = require('react-bootstrap/lib/Col');
 var logs = require('../utilities/logMixin.js')
 
 
+
 var bulletsArray = ["One for the money", "two for the show", "three to get ready", "four cat go"]
 
 
@@ -46,7 +47,9 @@ const Bullets = React.createClass({
 
 
     return (
-      <div>{bull}</div>
+      <div>
+        {bull}
+    </div>
     )
 
   },
