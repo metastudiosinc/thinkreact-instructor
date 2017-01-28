@@ -12,7 +12,7 @@ const text ="Lucas ipsum dolor sit amet antilles codru-ji biggs bith lannik shaa
 const Overview = React.createClass({
 
   name: "Overview",
-  mixins: [logs], //dont for get the comma
+  // mixins: [logs], //dont for get the comma
   propTypes:{
     children:React.PropTypes.node
   },
