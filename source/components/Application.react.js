@@ -12,7 +12,7 @@ const Photos = require('./Photos.react.js');
 const Application = React.createClass({
 
     name: "Application",
-    mixins: [logs], //dont for get the comma
+    // mixins: [logs], //dont for get the comma
 
     //-----default API--------
     //getDefaultProps: function(){},

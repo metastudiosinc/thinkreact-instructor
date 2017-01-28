@@ -7,7 +7,7 @@ var logs = require('../utilities/logMixin.js')
 const <NAME> = React.createClass({
 
   name: "<NAME>",
-  mixins: [logs], //dont for get the comma
+  // mixins: [logs], //dont for get the comma
   propTypes:{
     children:React.PropTypes.node
   },
