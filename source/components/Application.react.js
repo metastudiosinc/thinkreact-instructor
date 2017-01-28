@@ -6,7 +6,7 @@ const Header = require('./Header.react.js');
 const Overview = require('./Overview.react.js');
 const Bullets = require('./Bullets.react.js');
 const Photos = require('./Photos.react.js');
-
+const Tweets = require('./Tweets.react.js')
 
 
 const Application = React.createClass({
@@ -39,7 +39,10 @@ const Application = React.createClass({
                 <Header>Photos</Header>
                 <Photos />
               </Section>
-              <Section><Header>Tweets</Header></Section>
+              <Section>
+                <Header>Tweets</Header>
+                <Tweets />
+              </Section>
             </div>
         );
     },

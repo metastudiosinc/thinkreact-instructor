@@ -2,7 +2,6 @@ const React = require('react');
 const Row = require('react-bootstrap/lib/Row');
 const Col = require('react-bootstrap/lib/Col');
 var logs = require('../utilities/logMixin.js')
-
 const style ={
   color:"grey"
 }
@@ -28,10 +27,10 @@ const Overview = React.createClass({
 
   render: function() {
     return (
-      <p style={style}>
-        {text}
+      <div style={style}>
+        <p>{text}</p>
         {this.props.children}
-      </p>
+      </div>
     )
 
   },

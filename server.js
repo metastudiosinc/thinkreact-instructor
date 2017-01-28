@@ -14,7 +14,26 @@ var server = function() {
       res.setHeader('Content-Type', 'text/html');
       res.send(fs.readFileSync('./views/index.html'));
     };
-  };
+
+
+    ////------
+
+    self.routes['/tweets'] = function(req, res) {
+
+      var tweets = []
+      tweets.push({date:"today", text:"I love tweets", user:"@jwesleye"})
+
+      tweets.push({date:"yesterday", text:"I like tweets", user:"@jwesleye"})
+
+      tweets.push({date:"tomorrow", text:"All work and no play makes Jack a dull boy.", user:"@jwesleye"})
+
+      res.jsonp({"tweets":tweets});
+
+    };
+
+
+    ////=-------
+  };//end of create route
 
   self.initializeServer = function() {
     self.createRoutes();
@@ -26,6 +45,10 @@ var server = function() {
     for (var r in self.routes) {
       self.app.get(r, self.routes[r]);
     }
+
+
+
+
   };
 
   self.start = function() {
