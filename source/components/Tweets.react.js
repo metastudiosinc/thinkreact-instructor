@@ -2,6 +2,9 @@ const React = require('react');
 const Row = require('react-bootstrap/lib/Row');
 const Col = require('react-bootstrap/lib/Col');
 import textBlock from "./textBlock.react"
+import tweetsActions from "../actions/tweets.actions.js"
+
+
 
 var logs = require('../utilities/logMixin.js')
 const Tweets = React.createClass({
@@ -16,7 +19,13 @@ const Tweets = React.createClass({
   //getDefaultProps: function(){},
   //getInitialState: function() {},
   //componentWillMount: function(){},
-  //componentDidMount: function(){},
+  componentDidMount: function(){
+
+      //TODO add tweet change listener
+
+      tweetsActions.getNewTweets()
+
+  },
   //componentWillReceiveProps: function(){},
   //shouldComponentUpdate: function(){},
   //componentWillUpdate: function(){},
@@ -24,7 +33,6 @@ const Tweets = React.createClass({
   render: function() {
     return (
       <div>
-
         {textBlock("today", "some text", "@jwesleye")}
 
       </div>
